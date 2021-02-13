@@ -1,0 +1,35 @@
+{
+  "name": "sems-refactoring",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --watch .src -e ts --exec \"ts-node -T --project ./tsconfig.json ./src/index\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "class-validator": "^0.12.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "lodash": "^4.17.20",
+    "mysql2": "^2.2.5",
+    "typeorm": "^0.2.29"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.9",
+    "@types/dotenv": "^8.2.0",
+    "@types/ejs": "^3.0.5",
+    "@types/express": "^4.17.11",
+    "@types/lodash": "^4.14.165",
+    "eslint": "^7.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.20.2",
+    "nodemon": "^2.0.6",
+    "ts-node": "^9.1.0",
+    "typescript": "^4.1.2"
+  }
+}
