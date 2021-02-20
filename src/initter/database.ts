@@ -1,5 +1,12 @@
-import { createConnection } from "typeorm";
-import { User } from "../entities";
+import { createConnection } from 'typeorm';
+
+import { 
+  User,
+  UserEquip,
+  Admin,
+  Equip,
+  Software 
+} from '../entities';
 
 export const initDatabase = (logging = false) =>
   createConnection({
@@ -10,7 +17,8 @@ export const initDatabase = (logging = false) =>
     username: process.env.DB_USERNAME,
     password: process.env.DB_PASSWORD,
     entities: [
-      User
+      User, Equip, UserEquip,
+      Admin, Software
     ],
     synchronize: true,
     logging,
