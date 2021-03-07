@@ -5,7 +5,10 @@ import {
   UserEquip,
   Admin,
   Equip,
-  Software 
+  Software,
+  Book,
+  Restaurant,
+  SoftwareHistory
 } from '../entities';
 
 export const initDatabase = (logging = false) =>
@@ -18,7 +21,8 @@ export const initDatabase = (logging = false) =>
     password: process.env.DB_PASSWORD,
     entities: [
       User, Equip, UserEquip,
-      Admin, Software
+      Admin, Software,
+      Book, Restaurant, SoftwareHistory
     ],
     synchronize: true,
     logging,
